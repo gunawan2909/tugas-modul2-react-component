@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./component/Card";
+import Input from "./component/Input"
+import React from "react";
+export default function App() {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let data = []
+    function search_data() {
+       
+
+    }
+
+
+
+
+    return (
+        <div className=' w-full mt-3 flex flex-col'>
+            <h1 className=' text-center text-3xl' >Data Mahasiswa Teknik Komputer Universitas Diponegoro</h1>
+            <h2 className=' text-center text-2xl font-bold mt-3'>Kelompok 5 Praktikum RPLBK</h2>
+            <Input id="input_text" />
+            <button onClick={search_data} >Check</button>
+            <Card />
+
+
+        </div >
+    )
+
 }
 
-export default App;
